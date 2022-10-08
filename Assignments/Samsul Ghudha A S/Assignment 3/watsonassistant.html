@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Watson Assistant</title>
+</head>
+<body background="https://sajee.s3.ap.cloud-object-storage.appdomain.cloud/001.JPG">
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "56d117f9-7ba6-4edf-a93d-3151ec0bc9f4", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "10b2ff7d-d1de-4719-ba8c-4564cdc072ce", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
