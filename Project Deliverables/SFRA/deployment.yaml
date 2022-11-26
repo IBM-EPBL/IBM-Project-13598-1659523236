@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: sfra
-        image: au.icr.io/sajeeth/jobportal
+        image: au.icr.io/sajeeth/sfra
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
